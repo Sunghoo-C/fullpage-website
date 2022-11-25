@@ -283,12 +283,14 @@
  }
  .fp-warning,
  .fp-watermark{
+    display:none;
      z-index: 9999999;
      position: absolute;
      bottom: 0;
  }
  .fp-warning,
  .fp-watermark a{
+    display:none;
      text-decoration: none;
      color: #000;
      background: rgba(255,255,255,0.6);

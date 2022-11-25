@@ -8,3 +8,4 @@ This is an web page practice using fullpage.js javascript library.
 - HTML/CSS
 - jQuery
 - Embed Google Font
+- CSS gradient
