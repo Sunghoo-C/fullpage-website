@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Full page</title>
+    <link rel="stylesheet" type="text/css" href="assets/fullpage.css" />
+    <link rel="stylesheet" type="text/css" href="assets/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap"
+      rel="stylesheet"
+    />
+    <!--[if IE]>
+      <script type="text/javascript">
+        var console = { log: function () {} };
+      </script>
+    <![endif]-->
+  </head>
+  <body>
+    <ul id="menu">
+      <li data-menuanchor="firstPage" class="active">
+        <a href="#firstPage"># 1</a>
+      </li>
+      <li data-menuanchor="secondPage">
+        <a href="#secondPage"># 2</a>
+      </li>
+      <li data-menuanchor="3rdPage"><a href="#3rdPage"># 3</a></li>
+    </ul>
+
+    <div id="fullpage">
+      <div class="section" id="section0">
+        <h1>Hi 🤙 There</h1>
+      </div>
+      <div class="section active" id="section1">
+        <div class="slide" id="slide1">
+          <div class="intro">
+            <h1>Start</h1>
+          </div>
+        </div>
+        <div class="slide active" id="slide2">
+          <div class="intro">
+            <h1>Yo!</h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ac
+              felis vitae velit interdum sollicitudin vitae luctus libero. Proin
+              consequat neque vel odio lobortis pharetra. In nunc nibh, lobortis
+              sed dui at, varius faucibus quam. <br /><br />Donec eu viverra
+              dolor. Quisque interdum posuere magna at accumsan.
+            </p>
+          </div>
+        </div>
+        <div class="slide" id="slide3">
+          <h1>End</h1>
+        </div>
+      </div>
+      <div class="section" id="section2">
+        <div class="intro">
+          <h1>☘️ <br />Have a good day!</h1>
+        </div>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="assets/fullpage.js"></script>
+    <script type="text/javascript">
+      var myFullpage = new fullpage("#fullpage", {
+        sectionsColor: [
+          "#1bbc9b",
+          "#4BBFC3",
+          "#7BAABE",
+          "whitesmoke",
+          "#ccddff",
+        ],
+        anchors: ["firstPage", "secondPage", "3rdPage", "4thpage", "lastPage"],
+        menu: "#menu",
+        slidesNavigation: true,
+        lazyLoad: true,
+        credits: { enabled: false },
+      });
+    </script>
+  </body>
+</html>
